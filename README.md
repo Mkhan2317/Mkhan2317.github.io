@@ -1,6 +1,6 @@
 # MD Amir Khan - Professional Portfolio
 
-## 🚀 Data Scientist | Data Engineer | Financial Engineer
+## 🚀 Data Analyst | Data Engineer | Financial Engineer
 
 **Live Portfolio:** **[https://mkhan2317.github.io/](https://mkhan2317.github.io/)**
 
