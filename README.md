@@ -1,112 +1,88 @@
-# MD Amir Khan - Professional Portfolio
+# MD Amir Khan — Portfolio
 
-## 🚀 Data Analyst | Data Engineer | Financial Engineer
+## Agentic AI Engineer & Quantitative Analyst
 
-**Live Portfolio:** **[https://mkhan2317.github.io/](https://mkhan2317.github.io/)**
-
-A modern, responsive portfolio showcasing expertise across Data Science, Data Engineering, and Quantitative Finance with production-grade pipelines, ML models, and financial analytics.
+**Live Site:** [https://mkhan2317.github.io/](https://mkhan2317.github.io/)
 
 ---
 
-## 👨‍💼 About
+## About
 
-I'm MD Amir Khan, a versatile data professional focused on building end-to-end data and ML solutions: scalable data pipelines, predictive modeling, and quantitative analytics for decision support in financial and enterprise settings.
+I'm MD Amir Khan — Agentic AI Engineer and Quantitative Analyst at DXT Commodities (Stamford, CT), building production-grade AI systems and quantitative models for LNG and natural gas markets.
 
-- 🎓 **Master's in Financial Engineering & Analytics** — Stevens Institute of Technology (GPA: 3.90/4.00)
-- 🔬 **Data Science Research Assistant** — Stevens Institute of Technology
-- 💼 **Quantitative Data researcher** — United Commercial Bank
-- 💼 **Quant Investment & Data Analyst** — Standard Chartered Bank
-- 📊 **15+ Professional Certifications** spanning Finance, ML, and Data Engineering
-
----
-
-## 🌟 Portfolio Features
-
-- **📱 Responsive Design**: Optimized for all devices
-- **🎨 Modern UI/UX**: Professional design with smooth animations
-- **🧠 Data Science**: Predictive modeling, time series, ML deployment
-- **🧰 Data Engineering**: Robust ETL, batch/stream pipelines, scalable architectures
-- **📄 Resume Integration**: Downloadable PDF resume
-- **📞 Contact Integration**: Multiple ways to connect
+- **Master's in Financial Engineering & Analytics** — Stevens Institute of Technology (GPA: 3.90/4.00)
+- **Agentic AI Engineer & Quantitative Analyst** — DXT Commodities (Mar 2026 – Present)
+- **Quantitative Portfolio Research Analyst** — Stevens Institute of Technology (Jan 2024 – Present)
+- **Advanced RAG Certified** — LangChain, LangGraph, Agentic RAG, RAGAS (May 2026)
 
 ---
 
-## 🎯 Sections
+## What I Build at DXT Commodities
 
-1. **🏠 Hero**: Headline for Data Science, Data Engineering, Quant Finance
-2. **👤 About**: Cross-functional strengths and core competencies (GPA 3.90)
-3. **🎓 Education**: Stevens Institute & NSU
-4. **💼 Experience**: Stevens, United Commercial Bank, Standard Chartered Bank
-5. **🚀 Projects**: ML pricing, portfolio optimization, market analytics, HFT
-6. **🏆 Certificates**: Udemy, Akuna Capital, MIT/edX, Coursera
-7. **⚡ Skills**: Python, SQL, Databricks, PySpark, Azure, Power BI
-8. **📞 Contact**: Email, LinkedIn, phone, location
+**AI Engineering**
+- Agentic RAG system (LangChain + LangGraph) parsing unstructured pipeline maintenance notices across 6 operator portal formats — full pipeline from chunking and embedding model selection through hybrid retrieval (dense + BM25), MMR re-ranking, and LLM-based structured extraction
+- RAGAS-style evaluation harness (faithfulness, answer relevancy, context precision) for systematic prompt and retrieval tuning
+- Automated EPNG scraper pushing real-time Force Majeure alerts to Microsoft Teams via webhook every 5 minutes
+- FastAPI backend on AWS EC2 serving RAG extraction endpoints + Power BI dashboard for 23 interstate pipeline operators
 
----
-
-## 🏆 Featured Projects
-
-- **🔗 Bond Portfolio Optimization & Immunization** — Scalable portfolio risk platform with duration/convexity and immunization workflows, real-time risk metrics, and optimization.
-- **📈 SPY Momentum Alpha Backtesting** — HFT pipeline over 2 years of tick data (Polygon), real-time signals, automated analytics; achieved strong risk-adjusted returns.
-- **🎯 Options Pricing Using Machine Learning** — Deep learning and ensemble models with automated feature engineering and validation; exceeded baseline Black-Scholes in complex regimes.
-- **💹 Vasicek Bond Pricing & Kalman Filtering** — Multi-method fixed income modeling with state-space estimation and parameter tracking.
+**Quantitative Analysis**
+- Permian Basin gas market intelligence system modeling ~22–25 Bcf/d production and Waha basis pricing
+- US LNG feed gas forecasting pipeline covering 126 export trains across 13 terminals — <3% MAPE on 8-month holdout
+- Real-time production estimation model (OLS/Ridge regression) bridging the 2-month EIA reporting lag
 
 ---
 
-## 🛠️ Technologies Used
+## Sections
 
-**Frontend:**
-- HTML5 • CSS3 • JavaScript • Font Awesome • Google Fonts
-
-**Data Science & Engineering:**
-- Python (NumPy, Pandas, SciPy, Scikit-learn, Statsmodels, PyTorch)
-- SQL (analytics & data warehousing)
-- Databricks (PySpark, Delta Lake, SQL Warehouses)
-- Azure (Data Factory, Synapse Analytics, ADLS)
-- ML tooling: MLflow, Kubeflow
-
-**Visualization & BI:**
-- Tableau, Power BI, Matplotlib, Seaborn, Plotly
+1. **Hero** — Role, current employer, social links
+2. **About** — Dual AI Engineering + Quant background, core expertise
+3. **Education** — Stevens Institute (MFE, GPA 3.90) + North South University (BBA Finance)
+4. **News** — DXT hire, Advanced RAG completion, research paper
+5. **Experience** — DXT Commodities (Agentic AI Engineer + Quant Analyst), Stevens Research
+6. **Projects** — Quant finance, ML pricing, portfolio optimization, time series
+7. **Activities** — CFA Society NY, Riskfolio-Lib contribution, WorldQuant IQC
+8. **Certificates** — Advanced RAG, Akuna Options, MIT/edX, Udemy, Coursera
+9. **Skills** — AI/LLM, Programming, Quant Finance, Energy Markets, Cloud & DevOps
+10. **Contact** — Email, LinkedIn, phone, location
 
 ---
 
-## 📈 Professional Highlights
+## Tech Stack
 
-- **🎯 3.90 GPA** — Stevens Institute of Technology
-- **📊 5+ Years** — Markets, analytics, and data systems
-- **🏆 10+ Projects** — DS/DE/Quant implementations
-- **📜 15+ Certificates** — Ongoing professional learning
-- **🔬 Research** — AI-powered portfolio optimization
+**AI & LLM**
+LangChain · LangGraph · Agentic RAG · Vector Stores · Hybrid Search (BM25 + Dense) · HyDE · CRAG · Self-RAG · RAGAS · LangSmith
 
----
+**Languages & Core**
+Python · SQL
 
-## 🚀 Live Portfolio
+**ML & Quant**
+Scikit-learn · LightGBM · PyTorch · TensorFlow · Statsmodels · OLS/Ridge · VaR/CVaR · Robust PCA
 
-Visit: **[https://mkhan2317.github.io/](https://mkhan2317.github.io/)**
+**Infrastructure**
+FastAPI · AWS EC2 · SQL Server · Power BI · Docker · GitHub Actions
 
-Includes:
-- End-to-end project demos (DS/DE/Quant)
-- Skills & tooling visualizations
-- Downloadable resume
-- Detailed experience timeline
+**Energy & Market Data**
+EIA 914 · Genscape · FERC Bulletin Boards · Kinder Morgan EBB
 
----
-
-## 📫 Connect With Me
-
-- 🌐 **Portfolio:** [mkhan2317.github.io](https://mkhan2317.github.io/)
-- 💼 **LinkedIn:** [linkedin.com/in/amirkhan2317](https://www.linkedin.com/in/amirkhan2317/)
-- 📧 **Email:** mkhan37@stevens.edu
-- 📱 **Phone:** +1 (201) 234-7017
-- 📍 **Location:** Hoboken, New Jersey, USA
-- 🐙 **GitHub:** [github.com/Mkhan2317](https://github.com/Mkhan2317)
+**Frontend**
+HTML5 · CSS3 · JavaScript · Font Awesome · Google Fonts (Inter)
 
 ---
 
-## 📄 License
+## Key Stats
 
-This portfolio is open source and available under the MIT License.
+- **3.90 GPA** — Stevens Institute of Technology
+- **3+ Years** industry experience
+- **10+ Projects** in quant finance and AI engineering
+- **15+ Certifications**
+- **<3% MAPE** on 8-month LNG feed gas forecasting holdout
 
 ---
 
-⭐ **Explore the full site:** [https://mkhan2317.github.io/](https://mkhan2317.github.io/) 
+## Connect
+
+- **Portfolio:** [mkhan2317.github.io](https://mkhan2317.github.io/)
+- **LinkedIn:** [linkedin.com/in/amirkhan2317](https://www.linkedin.com/in/amirkhan2317/)
+- **Email:** amir.khan@dxt.com
+- **GitHub:** [github.com/Mkhan2317](https://github.com/Mkhan2317)
+- **Location:** Stamford, Connecticut, USA
