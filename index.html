@@ -202,11 +202,11 @@
 
                         <h3 style="margin-top:1rem;">AI Engineer</h3>
                         <ul>
-                            <li>Architecting a full-stack Pipeline Maintenance Calendar covering 23 interstate pipeline operators across 6 portal systems — with automated scraping, RAG-based notice parsing (vector store retrieval + LLM generation) for structured capacity impact extraction, SQL Server storage, FastAPI backend, and Power BI dashboard deployed on AWS EC2</li>
-                            <li>Built an Agentic RAG pipeline using LangGraph to classify and extract structured fields from unstructured pipeline maintenance notices across 6 different operator portal formats — enabling automated capacity impact quantification without manual review</li>
-                            <li>Built an automated web scraping and alerting system for El Paso Natural Gas (EPNG) critical notices — scraping Kinder Morgan's EBB portal every 5 minutes, deduplicating notices, and pushing real-time Force Majeure and maintenance alerts to Microsoft Teams via webhook, enabling the trading desk to react within minutes of posting</li>
-                            <li>Implemented hybrid retrieval (dense embeddings + BM25) and contextual compression over a vector store of historical pipeline notices to improve LLM extraction accuracy on capacity constraint language</li>
-                            <li>Built and deployed production FastAPI backends on AWS EC2 serving quantitative model outputs and RAG pipeline results to internal trading tools and Power BI dashboards</li>
+                            <li>Designed and built an Agentic RAG system using LangChain and LangGraph to parse unstructured pipeline maintenance notices across 6 operator portal formats — architecting the full pipeline from document ingestion and chunking strategy through embedding model selection, vector store indexing, hybrid retrieval (dense + BM25), and LLM-based structured field extraction</li>
+                            <li>Engineered prompt templates and structured output schemas for capacity impact extraction — iterating on chain-of-thought prompting and output parsers to reliably extract operator, affected capacity (MMcf/d), duration, and constraint type from free-text notices with varying formats</li>
+                            <li>Implemented hybrid retrieval with contextual compression (dense embeddings + BM25 ensemble) and MMR re-ranking over a vector store of historical pipeline notices, improving extraction accuracy on ambiguous capacity constraint language by reducing irrelevant context passed to the LLM</li>
+                            <li>Built evaluation harness using RAGAS-style metrics (faithfulness, answer relevancy, context precision) to benchmark RAG pipeline quality across notice types and operator formats, enabling systematic prompt and retrieval tuning</li>
+                            <li>Deployed full-stack AI pipeline on AWS EC2 — FastAPI backend exposing RAG extraction endpoints, SQL Server persistence layer for parsed notices, and Power BI dashboard for trading desk consumption — covering 23 interstate pipeline operators</li>
                         </ul>
 
                         <h3 style="margin-top:1.25rem;">Quantitative Analyst – Market Fundamentals (LNG & Power)</h3>
@@ -214,6 +214,7 @@
                             <li>Designed and built a Permian Basin gas market intelligence system modeling daily production (~22–25 Bcf/d), pipeline egress capacity across 4 major interstate pipelines, and supply-demand balance to predict Waha basis pricing — directly supporting trading desk decisions</li>
                             <li>Developed a real-time production estimation model using Genscape pipeline scrape data and EIA 914 reports, training a scaling model (OLS/Ridge regression) with R² and MAE validation to bridge the 2-month EIA reporting lag</li>
                             <li>Built a US LNG feed gas forecasting pipeline covering 126 active export trains across 13 terminals (~22,600 MMcf/d nameplate), with 3-model validation framework achieving &lt;3% MAPE on 8-month out-of-sample holdout</li>
+                            <li>Built an automated scraping and alerting system for EPNG critical notices — polling Kinder Morgan's EBB portal every 5 minutes, deduplicating notices, and pushing real-time Force Majeure and maintenance alerts to Microsoft Teams via webhook, enabling the trading desk to react within minutes of posting</li>
                             <li>Engineered end-to-end quantitative pipelines in Python and SQL — from raw data ingestion (Genscape, EIA, FERC bulletin boards) through statistical modeling, cross-validation, and automated forecast output — replacing manual workflows across production estimation, capacity tracking, and pricing analysis</li>
                         </ul>
 
