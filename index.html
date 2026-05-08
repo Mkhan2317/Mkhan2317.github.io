@@ -202,21 +202,25 @@
                         <h4>DXT Commodities</h4>
                         <span class="date">Mar 2026 - Present · Full-time · Stamford, Connecticut (Hybrid)</span>
                         <ul>
-                            <li>Architecting a full-stack Pipeline Maintenance Calendar covering 23 interstate pipeline operators across 6 portal systems — with automated scraping, LLM-powered notice parsing for capacity impact extraction, SQL Server storage, FastAPI backend, and Power BI dashboard deployed on AWS EC2</li>
+                            <li>Architecting a full-stack Pipeline Maintenance Calendar covering 23 interstate pipeline operators across 6 portal systems — with automated scraping, RAG-based notice parsing (vector store retrieval + LLM generation) for structured capacity impact extraction, SQL Server storage, FastAPI backend, and Power BI dashboard deployed on AWS EC2</li>
+                            <li>Built an Agentic RAG pipeline using LangGraph to classify and extract structured fields from unstructured pipeline maintenance notices across 6 different operator portal formats — enabling automated capacity impact quantification without manual review</li>
                             <li>Built an automated web scraping and alerting system for El Paso Natural Gas (EPNG) critical notices — scraping Kinder Morgan's EBB portal every 5 minutes, deduplicating notices, and pushing real-time Force Majeure and maintenance alerts to Microsoft Teams via webhook, enabling the trading desk to react within minutes of posting</li>
-                            <li>Engineered LLM-powered document parsing pipelines to extract structured capacity impact data from unstructured pipeline maintenance notices across multiple operator portal formats</li>
-                            <li>Built and deployed production FastAPI backends on AWS EC2 serving quantitative model outputs and pipeline data to internal trading tools and Power BI dashboards</li>
+                            <li>Implemented hybrid retrieval (dense embeddings + BM25) and contextual compression over a vector store of historical pipeline notices to improve LLM extraction accuracy on capacity constraint language</li>
+                            <li>Built and deployed production FastAPI backends on AWS EC2 serving quantitative model outputs and RAG pipeline results to internal trading tools and Power BI dashboards</li>
                         </ul>
                         <div class="skills-used">
                             <span>Python</span>
-                            <span>LLM Pipelines</span>
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>Agentic RAG</span>
+                            <span>Vector Stores</span>
+                            <span>Hybrid Search</span>
                             <span>FastAPI</span>
                             <span>AWS EC2</span>
                             <span>Web Scraping & Automation</span>
                             <span>SQL Server</span>
                             <span>Power BI</span>
                             <span>MS Teams Webhooks</span>
-                            <span>BeautifulSoup</span>
                         </div>
                     </div>
 
@@ -584,6 +588,26 @@
             <div class="container">
                 <h2 class="section-title">Certifications & Licenses</h2>
                 <div class="certificates-grid">
+                    <div class="certificate-card">
+                        <div class="certificate-icon" style="background:#1a1a2e; color:#fff; font-weight:700; font-size:0.85rem; display:flex; align-items:center; justify-content:center; border-radius:8px; padding:8px 6px; text-align:center;">
+                            Advanced RAG
+                        </div>
+                        <h3>Advanced RAG (Retrieval-Augmented Generation)</h3>
+                        <h4>Self-paced Course</h4>
+                        <span class="cert-date">May 2026</span>
+                        <p>10-module course covering the full RAG stack — from document processing, embeddings, and vector stores through advanced retrieval techniques (HyDE, CRAG, Self-RAG, Graph RAG), Agentic RAG with LangGraph, and production deployment. Directly applicable to LLM-powered pipelines at DXT Commodities.</p>
+                        <div class="cert-skills">
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>Vector Stores</span>
+                            <span>Embeddings</span>
+                            <span>Agentic RAG</span>
+                            <span>RAGAS Evaluation</span>
+                            <span>HyDE / CRAG / Self-RAG</span>
+                            <span>Hybrid Search</span>
+                        </div>
+                    </div>
+
                     <div class="certificate-card">
                         <div class="certificate-icon udemy">
                             udemy
@@ -1073,6 +1097,26 @@
                             <span>Ansible</span>
                             <span>CI/CD</span>
                             <span>Infrastructure as Code</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>AI Engineering & LLM</h3>
+                        <div class="skill-tags">
+                            <span>LangChain</span>
+                            <span>LangGraph</span>
+                            <span>RAG (Retrieval-Augmented Generation)</span>
+                            <span>Agentic RAG</span>
+                            <span>Vector Stores</span>
+                            <span>Embeddings</span>
+                            <span>Hybrid Search (BM25 + Dense)</span>
+                            <span>HyDE</span>
+                            <span>CRAG / Self-RAG</span>
+                            <span>Graph RAG</span>
+                            <span>RAGAS Evaluation</span>
+                            <span>LangSmith</span>
+                            <span>Prompt Engineering</span>
+                            <span>LLM Pipelines</span>
                         </div>
                     </div>
 
