@@ -10,7 +10,7 @@
 
 I'm MD Amir Khan — Agentic AI Engineer and Quantitative Analyst at DXT Commodities (Stamford, CT), building production-grade AI systems and quantitative models for LNG and natural gas markets.
 
-- **Master's in Financial Engineering & Analytics** — Stevens Institute of Technology (GPA: 3.90/4.00)
+- **Master's in Financial Engineering & Analytics** — Stevens Institute of Technology
 - **Agentic AI Engineer & Quantitative Analyst** — DXT Commodities (Mar 2026 – Present)
 - **Quantitative Portfolio Research Analyst** — Stevens Institute of Technology (Jan 2024 – Present)
 - **Advanced RAG Certified** — LangChain, LangGraph, Agentic RAG, RAGAS (May 2026)
@@ -36,7 +36,7 @@ I'm MD Amir Khan — Agentic AI Engineer and Quantitative Analyst at DXT Commodi
 
 1. **Hero** — Role, current employer, social links
 2. **About** — Dual AI Engineering + Quant background, core expertise
-3. **Education** — Stevens Institute (MFE, GPA 3.90) + North South University (BBA Finance)
+3. **Education** — Stevens Institute (MFE) + North South University (BBA Finance)
 4. **News** — DXT hire, Advanced RAG completion, research paper
 5. **Experience** — DXT Commodities (Agentic AI Engineer + Quant Analyst), Stevens Research
 6. **Projects** — Quant finance, ML pricing, portfolio optimization, time series
@@ -71,7 +71,6 @@ HTML5 · CSS3 · JavaScript · Font Awesome · Google Fonts (Inter)
 
 ## Key Stats
 
-- **3.90 GPA** — Stevens Institute of Technology
 - **3+ Years** industry experience
 - **10+ Projects** in quant finance and AI engineering
 - **15+ Certifications**
