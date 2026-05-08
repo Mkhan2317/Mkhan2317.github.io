@@ -681,6 +681,7 @@ section:nth-child(even) { background: rgba(255,255,255,0.01); }
   opacity: 0.7;
 }
 
+.company-logo.dxt { background: rgba(56,189,248,0.1); border-color: rgba(56,189,248,0.25); color: var(--primary); font-size: 0.85rem; font-weight: 800; letter-spacing: 0.05em; }
 .company-logo.stevens { background: rgba(220,38,38,0.1); border-color: rgba(220,38,38,0.2); }
 .company-logo.stevens img { filter: none; opacity: 1; }
 
@@ -700,13 +701,30 @@ section:nth-child(even) { background: rgba(255,255,255,0.01); }
   letter-spacing: -0.01em;
 }
 
-/* Sub-role headings inside combined cards */
-.experience-card h3[style] {
-  color: var(--text);
+/* Company name (top h3) */
+.experience-card > h3:not(.role-title) {
+  color: #f8fafc;
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.2rem;
+}
+
+/* Sub-role title headings */
+.experience-card h3.role-title {
+  color: var(--primary);
   font-size: 1.05rem;
   font-weight: 700;
-  padding: 0.6rem 0 0.2rem;
+  padding: 0.85rem 0 0.2rem;
   border-top: 1px solid var(--border);
+  margin-top: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+/* First role-title doesn't need top border */
+.experience-card h3.role-title:first-of-type {
+  border-top: none;
+  padding-top: 0.5rem;
 }
 
 .experience-card ul { padding-left: 1.4rem; margin: 0.75rem 0 1rem; }
