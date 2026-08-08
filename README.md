@@ -22,7 +22,7 @@ I'm MD Amir Khan — Agentic AI Engineer and Quantitative Analyst at DXT Commodi
 **AI Engineering**
 - Agentic RAG system (LangChain + LangGraph) parsing unstructured pipeline maintenance notices across 6 operator portal formats — full pipeline from chunking and embedding model selection through hybrid retrieval (dense + BM25), MMR re-ranking, and LLM-based structured extraction
 - RAGAS-style evaluation harness (faithfulness, answer relevancy, context precision) for systematic prompt and retrieval tuning
-- Automated EPNG scraper pushing real-time Force Majeure alerts to Microsoft Teams via webhook every 5 minutes
+- Real-time Force Majeure alerting service covering 32 U.S. interstate gas pipelines, pushing alerts to Microsoft Teams via webhook every 5 minutes
 - FastAPI backend on AWS EC2 serving RAG extraction endpoints + Power BI dashboard for 23 interstate pipeline operators
 
 **Quantitative Analysis**

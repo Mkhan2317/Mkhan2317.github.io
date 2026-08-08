@@ -83,7 +83,7 @@
                     <div class="about-text">
                         <p>I'm an AI engineer and quantitative analyst at DXT Commodities (Stamford, CT), building production systems for U.S. natural gas and power markets. Since March 2026 I've shipped nine live systems as sole architect — the trading and analytics teams use them daily.</p>
 
-                        <p>On the AI engineering side: an LLM pipeline that reads unstructured maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 operator portal architectures, a real-time alerting service pushing Force Majeure notices to Microsoft Teams within minutes of posting, and a full-stack analytics platform covering the 4,305-unit / 232.5 GW PJM generation fleet.</p>
+                        <p>On the AI engineering side: an LLM pipeline that reads unstructured maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 operator portal architectures, a real-time Force Majeure alerting service covering 32 U.S. interstate gas pipelines that pushes notices to Microsoft Teams within minutes of posting, and a full-stack analytics platform covering the 4,305-unit / 232.5 GW PJM generation fleet.</p>
 
                         <p>On the quant side: a U.S. LNG feed-gas forecaster covering 126 export trains at 13 terminals (under 3% MAPE on an 8-month out-of-sample holdout), a 48-model national gas demand forecaster (12 regions × 4 end-use sectors), a real-time production model that bridges the two-month EIA reporting lag, and an FTR nodal-basis screen on 8.77M PJM day-ahead observations.</p>
 
@@ -212,7 +212,7 @@
                             <li><strong>U.S. LNG feed-gas forecasting.</strong> Pipeline covering 126 export trains at 13 terminals (~22,600 MMcf/d nameplate). Three-model validation framework; under 3% MAPE on an 8-month out-of-sample holdout.</li>
                             <li><strong>U.S. natural gas demand forecasts.</strong> 48 models — 12 regions × 4 end-use sectors — producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones. Driven by NWS temperature forecasts and Fed industrial production data, trained on EIA state-level consumption; walk-forward cross-validation.</li>
                             <li><strong>Real-time gas production model + Permian Basin intelligence.</strong> OLS/Ridge scaling framework that combines licensed pipeline-nominations data with EIA-914 to produce a current-month U.S. production estimate inside the two-month EIA reporting lag. Permian codebase covers daily production, egress across the four major pipelines, and Waha basis pricing.</li>
-                            <li><strong>El Paso alerts + PEPCO nodal basis screen.</strong> Real-time alerting service polls the Kinder Morgan El Paso bulletin board every 5 minutes and pushes Force Majeure and maintenance notices to Microsoft Teams (response time: hours → minutes). PEPCO FTR-bidding screen covers ~8.77 M hourly observations across 61 nodes and 8+ years of PJM day-ahead data.</li>
+                            <li><strong>Pipeline Force Majeure alerts + PEPCO nodal basis screen.</strong> Real-time alerting service polls electronic bulletin boards across <strong>32 U.S. interstate gas pipelines</strong> every 5 minutes and pushes Force Majeure and maintenance notices to Microsoft Teams (response time: hours → minutes). PEPCO FTR-bidding screen covers ~8.77 M hourly observations across 61 nodes and 8+ years of PJM day-ahead data.</li>
                         </ul>
 
                         <div class="skills-used">
@@ -380,10 +380,10 @@
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>El Paso Critical Notices Alerting Service</h3>
+                            <h3>Pipeline Force Majeure Alert Service</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Automated scraping-and-alerting service that polls the Kinder Morgan El Paso EBB every five minutes, deduplicates events against persistent state, and pushes real-time Force Majeure and maintenance notices to the DXT trading team via Microsoft Teams webhook. Reduces trading-team response time from hours to minutes.</p>
+                        <p>Real-time alerting service that polls electronic bulletin boards across <strong>32 U.S. interstate natural-gas pipelines</strong> every five minutes, deduplicates events against persistent state, and pushes Force Majeure and maintenance notices to the DXT trading team via Microsoft Teams webhook. Cuts trading-team response time from hours to minutes.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Web Scraping</span>
