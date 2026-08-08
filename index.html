@@ -84,9 +84,9 @@
                     <div class="about-text">
                         <p>I'm an AI engineer and quantitative analyst at DXT Commodities (Stamford, CT), building production systems for U.S. natural gas and power markets. Since March 2026 I've shipped nine live systems as sole architect — the trading and analytics teams use them daily.</p>
 
-                        <p>On the AI engineering side: an LLM pipeline that reads unstructured maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 operator portal architectures, a real-time Force Majeure alerting service covering 32 U.S. interstate gas pipelines that pushes notices to Microsoft Teams within minutes of posting, and a full-stack analytics platform covering the 4,305-unit / 232.5 GW PJM generation fleet.</p>
+                        <p>On the AI engineering side: an LLM pipeline that reads unstructured maintenance and capacity notices across ~20 U.S. interstate gas pipelines, a real-time Force Majeure alerting service covering 30+ interstate pipelines that pushes notices to Microsoft Teams within minutes of posting, and a full-stack analytics platform covering the PJM generation fleet at national scale.</p>
 
-                        <p>On the quant side: a U.S. LNG feed-gas forecaster covering 126 export trains at 13 terminals (under 3% MAPE on an 8-month out-of-sample holdout), a 48-model national gas demand forecaster (12 regions × 4 end-use sectors), a real-time production model that bridges the two-month EIA reporting lag, and an FTR nodal-basis screen on 8.77M PJM day-ahead observations.</p>
+                        <p>On the quant side: a U.S. LNG feed-gas forecasting pipeline achieving sub-3% MAPE on out-of-sample validation, a national gas demand forecaster spanning 12 regions × 4 end-use sectors, a real-time production model that bridges the two-month EIA reporting lag, and an FTR nodal-basis screen on 8+ years of PJM day-ahead settlement data.</p>
 
                         <p>Alongside DXT, I supported Prof. Papa Momar Ndiaye's research at Stevens on the ε-subdivision Robust PCA framework for dynamic factor portfolios — implementing the algorithm in Python and validating it on ~6.5 years of daily returns across the 11 S&amp;P 500 GICS sector ETFs. Working paper in preparation.</p>
 
@@ -214,13 +214,13 @@
 
                         <h3 class="role-title">Applied AI Engineer &amp; Quantitative Analyst — Market Fundamentals (LNG &amp; Power)</h3>
                         <ul>
-                            <li><strong>Pipeline transparency platform.</strong> Built the scraping and LLM extraction pipeline that reads maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 different portal architectures (15+ format-specific scrapers covering HTML, PDF, Excel, and ASP.NET with TLS-impersonation for WAF-protected sites). Structured extraction with the Claude API turns free-form notices into typed capacity-impact records. FastAPI + SQL Server. Tracks 40+ active and 198+ upcoming restrictions on a peak day.</li>
-                            <li><strong>WattsApp — PJM fleet analytics.</strong> Full-stack platform covering 4,305 units / 232.5 GW nameplate across 2,262 plants in 13 states + DC. Overview, thermal, non-thermal, plants, insights, and natural-language query views used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.</li>
-                            <li><strong>Wattson — multi-ISO power price analytics.</strong> Live platform covering PJM, ERCOT, NYISO, MISO, and ISO-NE. Historical LMPs by energy/congestion/loss component, forward-contract settlements with strip aggregation, and a Price ⇄ Heat-Rate toggle that connects power and gas.</li>
-                            <li><strong>U.S. LNG feed-gas forecasting.</strong> Pipeline covering 126 export trains at 13 terminals (~22,600 MMcf/d nameplate). Three-model validation framework; under 3% MAPE on an 8-month out-of-sample holdout.</li>
-                            <li><strong>U.S. natural gas demand forecasts.</strong> 48 models — 12 regions × 4 end-use sectors — producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones. Driven by NWS temperature forecasts and Fed industrial production data, trained on EIA state-level consumption; walk-forward cross-validation.</li>
-                            <li><strong>Real-time gas production model + Permian Basin intelligence.</strong> OLS/Ridge scaling framework that combines licensed pipeline-nominations data with EIA-914 to produce a current-month U.S. production estimate inside the two-month EIA reporting lag. Permian codebase covers daily production, egress across the four major pipelines, and Waha basis pricing.</li>
-                            <li><strong>Pipeline Force Majeure alerts + PEPCO nodal basis screen.</strong> Real-time alerting service polls electronic bulletin boards across <strong>32 U.S. interstate gas pipelines</strong> every 5 minutes and pushes Force Majeure and maintenance notices to Microsoft Teams (response time: hours → minutes). PEPCO FTR-bidding screen covers ~8.77 M hourly observations across 61 nodes and 8+ years of PJM day-ahead data.</li>
+                            <li><strong>Pipeline transparency platform.</strong> Built the scraping and LLM extraction pipeline that reads maintenance and capacity notices across ~20 U.S. interstate gas pipelines and multiple operator portal architectures. Structured extraction with the Claude API turns free-form notices into typed capacity-impact records. FastAPI + SQL Server.</li>
+                            <li><strong>PJM Fleet Analytics Platform.</strong> Full-stack platform covering the PJM generation fleet at national scale. Overview, thermal, non-thermal, plants, insights, and natural-language query views used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.</li>
+                            <li><strong>Multi-ISO Power Price Analytics Platform.</strong> Live platform covering PJM, ERCOT, NYISO, MISO, and ISO-NE. Historical LMPs by energy/congestion/loss component, forward-contract settlements with strip aggregation, and a Price ⇄ Heat-Rate toggle that connects power and gas.</li>
+                            <li><strong>U.S. LNG feed-gas forecasting.</strong> End-to-end forecasting pipeline covering the U.S. LNG export terminal fleet. Three-model validation framework; sub-3% MAPE on out-of-sample validation.</li>
+                            <li><strong>U.S. natural gas demand forecasts.</strong> Multi-model forecaster (12 regions × 4 end-use sectors) producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones. Driven by NWS temperature forecasts and Fed industrial production data, trained on EIA state-level consumption; walk-forward cross-validation.</li>
+                            <li><strong>Real-time gas production model + Permian Basin intelligence.</strong> OLS/Ridge scaling framework that combines licensed pipeline-nominations data with EIA monthly statistics to produce a current-month U.S. production estimate inside the EIA reporting lag. Permian codebase covers daily production, egress capacity, and Waha basis pricing.</li>
+                            <li><strong>Pipeline Force Majeure alerts + PEPCO nodal basis screen.</strong> Real-time alerting service polls electronic bulletin boards across <strong>30+ U.S. interstate gas pipelines</strong> every 5 minutes and pushes Force Majeure and maintenance notices to Microsoft Teams (response time: hours → minutes). PEPCO FTR-bidding screen covers 8+ years of PJM day-ahead settlement data.</li>
                         </ul>
 
                         <div class="skills-used">
@@ -280,7 +280,7 @@
                             <h3>Pipeline Transparency Platform (LLM Extraction)</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Live web application monitoring 19 U.S. interstate natural-gas pipelines across 8 operator portal architectures. Built 15+ format-specific scrapers (HTML, PDF via pdfplumber, Excel, ASP.NET WebForms, WAF-protected portals via TLS impersonation) and a structured-output extraction layer over the Anthropic Claude API that normalizes free-form maintenance notices into typed capacity-impact records. Content-hash caching cut LLM calls from ~40/run to 0 on unchanged notices. Tracks 40+ active and 198+ upcoming restrictions on a peak day, aggregating 17.5 M Dth/d capacity offline.</p>
+                        <p>Live web application monitoring ~20 U.S. interstate natural-gas pipelines across multiple operator portal architectures. Built format-specific scrapers (HTML, PDF, Excel, dynamic and protected portals) and a structured-output extraction layer over the Anthropic Claude API that normalizes free-form maintenance notices into typed capacity-impact records. Caching layer significantly reduces LLM calls on unchanged notices. Tracks active and upcoming capacity restrictions across the interstate pipeline network.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Claude API</span>
@@ -294,10 +294,10 @@
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>WattsApp — PJM Fleet Analytics Platform</h3>
+                            <h3>PJM Fleet Analytics Platform</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Full-stack production web application covering the PJM generation fleet: 4,305 units / 232.5 GW nameplate across 2,262 plants in 13 states + DC. Overview / Thermal / Non-Thermal / Plants / Insights / Ask (natural-language query) / My Units / Exports views used daily by the DXT power desk.</p>
+                        <p>Full-stack production web application covering the PJM generation fleet at national scale — thousands of units across 13 states + DC. Overview / Thermal / Non-Thermal / Plants / Insights / Ask (natural-language query) / My Units / Exports views used daily by the DXT power desk.</p>
                         <div class="project-tags">
                             <span>Next.js</span>
                             <span>React</span>
@@ -312,10 +312,10 @@
 
                     <div class="project-card">
                         <div class="project-header">
-                            <h3>Wattson — Multi-ISO Wholesale Power Price Analytics</h3>
+                            <h3>Multi-ISO Wholesale Power Price Analytics Platform</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Live platform for U.S. wholesale power analysis across the five FERC-regulated RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE). Historical daily and hourly LMPs with energy/congestion/marginal-loss components, forward-contract settlements with strip aggregation (Summer, Winter, Spring, Q1–Q4), and an integrated Price ⇄ Heat-Rate toggle bridging power ($/MWh) and gas ($/MMBtu) via Platts / Henry Hub LD1 / ICE GDD FUT.</p>
+                        <p>Live platform for U.S. wholesale power analysis across the five FERC-regulated RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE). Historical daily and hourly LMPs with energy/congestion/marginal-loss components, forward-contract settlements with strip aggregation (Summer, Winter, Spring, Q1–Q4), and an integrated Price ⇄ Heat-Rate toggle bridging power and gas markets via commercial gas indices.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>FastAPI</span>
@@ -331,7 +331,7 @@
                             <h3>U.S. LNG Feed-Gas Forecasting Pipeline</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>End-to-end demand forecasting pipeline covering the U.S. LNG export terminal fleet — 126 export trains across 13 terminals (~22,600 MMcf/d nameplate). Three-model validation framework achieving under 3% MAPE on an 8-month out-of-sample holdout.</p>
+                        <p>End-to-end demand forecasting pipeline covering the U.S. LNG export terminal fleet — the full production terminal set across the Gulf Coast and East Coast. Three-model validation framework achieving sub-3% MAPE on out-of-sample validation.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Scikit-learn</span>
@@ -346,7 +346,7 @@
                             <h3>U.S. Natural Gas Demand Forecast Platform</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Daily 30-day demand forecasts for the U.S. Lower 48, disaggregated into 12 geographic regions × 4 end-use sectors (48 specialized machine-learning models). XGBoost for weather-sensitive sectors, Ridge regression for slower-moving ones. Driven by NWS temperature forecasts, NOAA NCEI Global Historical Climatology Network — Daily observations, and the Federal Reserve Board's Industrial Production Index (G.17); trained on EIA state-level consumption (Form EIA-857). Walk-forward cross-validation with per-fold MAE / RMSE / MAPE and physical-bounds sanity checks.</p>
+                        <p>Daily 30-day demand forecasts for the U.S. Lower 48, disaggregated into 12 geographic regions × 4 end-use sectors (specialized machine-learning models per region-sector combination). XGBoost for weather-sensitive sectors, Ridge regression for slower-moving ones. Driven by federal weather and macroeconomic data; trained on EIA state-level consumption. Walk-forward cross-validation with per-fold accuracy metrics and physical-bounds sanity checks.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>XGBoost</span>
@@ -362,11 +362,11 @@
                             <h3>Real-Time U.S. Natural Gas Production Model</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>OLS / Ridge scaling framework that combines licensed daily pipeline-nominations data with EIA-914 official monthly production statistics, validated by R² and MAE. Produces a current-month U.S. natural-gas production estimate that operates within the two-month EIA reporting-lag interval.</p>
+                        <p>OLS / Ridge scaling framework that combines licensed daily pipeline-nominations data with EIA monthly production statistics, validated by R² and MAE. Produces a current-month U.S. natural-gas production estimate that operates within the EIA reporting-lag interval.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>OLS / Ridge Regression</span>
-                            <span>EIA-914</span>
+                            <span>EIA Data</span>
                             <span>Statistical Modeling</span>
                             <span>Reporting-Lag Bridging</span>
                         </div>
@@ -377,7 +377,7 @@
                             <h3>Permian Basin Market Intelligence System</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Daily codebase modeling Permian production (~22–25 Bcf/d), integrating egress capacity across the four major egress pipelines to construct a supply-demand balance and predict Waha basis pricing for the trading desk.</p>
+                        <p>Daily codebase modeling Permian basin production, integrating egress capacity across the major egress pipelines to construct a supply-demand balance and predict Waha basis pricing for the trading desk.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Supply-Demand Balance</span>
@@ -391,7 +391,7 @@
                             <h3>Pipeline Force Majeure Alert Service</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Real-time alerting service that polls electronic bulletin boards across <strong>32 U.S. interstate natural-gas pipelines</strong> every five minutes, deduplicates events against persistent state, and pushes Force Majeure and maintenance notices to the DXT trading team via Microsoft Teams webhook. Cuts trading-team response time from hours to minutes.</p>
+                        <p>Real-time alerting service that polls electronic bulletin boards across <strong>30+ U.S. interstate natural-gas pipelines</strong> every five minutes, deduplicates events against persistent state, and pushes Force Majeure and maintenance notices to the DXT trading team via Microsoft Teams webhook. Cuts trading-team response time from hours to minutes.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>Web Scraping</span>
@@ -406,7 +406,7 @@
                             <h3>PEPCO Nodal Basis Screen (FTR Bidding)</h3>
                             <span class="date">DXT · Production</span>
                         </div>
-                        <p>Phase-1 quantitative screen of PJM bidding nodes in the PEPCO utility zone for downstream Financial Transmission Rights bidding analysis. ~8.77 M hourly observations across 61 PEPCO nodes plus the zone aggregate, drawn from 8+ years of PJM day-ahead settlement data. Deliverables: print-ready 11-page PDF stakeholder report, per-node per-component CSV table, and an 8.77M-row parquet panel for reproducibility.</p>
+                        <p>Phase-1 quantitative screen of PJM bidding nodes in the PEPCO utility zone for downstream Financial Transmission Rights bidding analysis. Millions of hourly observations across dozens of nodes plus the zone aggregate, drawn from 8+ years of PJM day-ahead settlement data. Deliverables: print-ready PDF stakeholder report, per-node per-component CSV table, and a full-panel parquet dataset for reproducibility.</p>
                         <div class="project-tags">
                             <span>Python</span>
                             <span>PJM Day-Ahead</span>
