@@ -56,7 +56,7 @@ LangChain · LangGraph · Agentic RAG · Vector Stores · Hybrid Search (BM25 + 
 Python · SQL
 
 **ML & Quant**
-Scikit-learn · LightGBM · PyTorch · TensorFlow · Statsmodels · OLS/Ridge · VaR/CVaR · Robust PCA
+Scikit-learn · XGBoost · Ridge/OLS · Statsmodels · Walk-Forward CV · Robust PCA
 
 **Infrastructure**
 FastAPI · AWS EC2 · SQL Server · Power BI · Docker · GitHub Actions

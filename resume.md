@@ -56,7 +56,7 @@ Fed repeated LLM forecasts into the Bayesian update as probabilistic views — s
 
 - **Languages & Tools:** Python, SQL, TypeScript, JavaScript · React, Next.js, FastAPI · SQL Server, Docker, AWS · Git, GitHub, GitLab
 - **AI / LLM:** LangChain · LangGraph · LangSmith · RAG · Vector Databases · LLM Agents · Prompt Engineering · Anthropic Claude & OpenAI APIs
-- **Machine Learning:** PyTorch · Scikit-learn · XGBoost · LightGBM · Pandas · NumPy · Time-Series Forecasting
+- **Machine Learning:** Scikit-learn · XGBoost · Ridge / OLS · Statsmodels · Pandas · NumPy · Time-Series Forecasting · Walk-Forward Cross-Validation
 - **Energy Markets:** Natural Gas & Power · LNG Forecasting · Pipeline Capacity Analysis · ISOs / RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE) · FTR Markets
 
 ---
