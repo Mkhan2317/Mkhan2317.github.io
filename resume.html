@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>MD Amir Khan — Resume</title>
+<style>
+  @page {
+    size: Letter;
+    margin: 0.5in 0.55in;
+  }
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", "Helvetica Neue", "Arial", sans-serif;
+    font-size: 10pt;
+    line-height: 1.35;
+    color: #1a1a1a;
+    background: #fff;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    border-bottom: 1.5px solid #1a1a2e;
+  }
+  header h1 {
+    font-size: 20pt;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin: 0 0 4px 0;
+    color: #1a1a2e;
+  }
+  header .contact {
+    font-size: 9.5pt;
+    color: #333;
+  }
+  header .contact a {
+    color: #1a4a8a;
+    text-decoration: none;
+  }
+  header .contact .dot {
+    color: #999;
+    margin: 0 5px;
+  }
+
+  /* Sections */
+  section { margin-bottom: 6px; }
+  h2 {
+    font-size: 10.5pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    color: #1a1a2e;
+    margin: 7px 0 3px 0;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #1a1a2e;
+  }
+  h3 {
+    font-size: 10.4pt;
+    font-weight: 700;
+    margin: 5px 0 0 0;
+    color: #1a1a2e;
+  }
+  .role {
+    font-size: 9.8pt;
+    font-weight: 600;
+    margin: 0 0 2px 0;
+    color: #333;
+  }
+  .role .date {
+    float: right;
+    font-weight: 500;
+    color: #555;
+    font-style: italic;
+  }
+
+  p { margin: 2px 0; }
+  ul {
+    margin: 3px 0 4px 0;
+    padding-left: 15px;
+  }
+  li {
+    margin-bottom: 3px;
+    text-align: justify;
+  }
+  li strong { color: #1a1a2e; }
+
+  .summary {
+    text-align: justify;
+    margin: 2px 0 0 0;
+  }
+
+  .edu-block { margin-bottom: 8px; }
+  .edu-block:last-child { margin-bottom: 0; }
+  .edu-block .school { font-weight: 700; color: #1a1a2e; font-size: 10.2pt; }
+  .edu-block .location { float: right; color: #555; font-style: italic; font-size: 9.5pt; padding-right: 5px; }
+  .edu-block .degree { font-style: italic; margin: 2px 0 0 0; color: #333; }
+
+  .research-item { margin-bottom: 4px; }
+  .research-item .paper-title { font-weight: 700; font-style: italic; color: #1a1a2e; }
+  .research-item .meta { font-size: 9pt; color: #555; margin: 0; font-style: italic; }
+  .research-item .desc { text-align: justify; margin: 1px 0 0 0; }
+
+  .skills-list { margin: 0; padding-left: 0; list-style: none; }
+  .skills-list li {
+    margin-bottom: 2px;
+    padding-left: 0;
+    text-align: left;
+  }
+  .skills-list li strong { color: #1a1a2e; }
+
+  .clearfix::after { content: ""; display: table; clear: both; }
+
+  h2, h3 { page-break-after: avoid; }
+  li, p { page-break-inside: avoid; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>MD AMIR KHAN</h1>
+  <div class="contact">
+    <a href="mailto:mkhan37@stevens.edu">mkhan37@stevens.edu</a>
+    <span class="dot">·</span> Stamford, CT
+    <span class="dot">·</span> <a href="https://github.com/Mkhan2317">github.com/Mkhan2317</a>
+    <span class="dot">·</span> <a href="https://www.linkedin.com/in/amirkhan2317/">linkedin.com/in/amirkhan2317</a>
+    <span class="dot">·</span> <a href="https://mkhan2317.github.io/">mkhan2317.github.io</a>
+  </div>
+</header>
+
+<section>
+  <h2>Professional Summary</h2>
+  <p class="summary">AI engineer and quantitative analyst at DXT Commodities, building production LLM systems, forecasting models, and full-stack analytics platforms used daily by the trading desk across U.S. natural gas and power markets. Sole architect on nine live systems shipped since March 2026.</p>
+</section>
+
+<section>
+  <h2>Experience</h2>
+
+  <div class="clearfix">
+    <h3>DXT Commodities North America <span style="font-weight:500; color:#555;">— Stamford, CT</span></h3>
+    <p class="role clearfix">Applied AI Engineer &amp; Quantitative Analyst — Market Fundamentals (LNG &amp; Power) <span class="date">March 2026 – Present</span></p>
+    <ul style="margin-top:5px;">
+      <li><strong>Pipeline transparency platform.</strong> Built the scraping and LLM extraction pipeline that reads maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 different portal architectures (15+ format-specific scrapers covering HTML, PDF, Excel, and ASP.NET with TLS-impersonation for WAF-protected sites). Structured extraction with the Claude API turns free-form notices into typed capacity-impact records. FastAPI + SQL Server. Tracks 40+ active and 198+ upcoming restrictions on a peak day.</li>
+      <li><strong>WattsApp — PJM fleet analytics.</strong> Full-stack platform covering <strong>4,305 units / 232.5 GW nameplate</strong> across 2,262 plants in 13 states + DC. Overview, thermal, non-thermal, plants, insights, and natural-language query views used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.</li>
+      <li><strong>Wattson — multi-ISO power price analytics.</strong> Live platform covering PJM, ERCOT, NYISO, MISO, and ISO-NE. Historical LMPs by energy/congestion/loss component, forward-contract settlements with strip aggregation, and a Price ⇄ Heat-Rate toggle that connects power and gas.</li>
+      <li><strong>U.S. LNG feed-gas forecasting.</strong> Pipeline covering <strong>126 export trains at 13 terminals (~22,600 MMcf/d nameplate)</strong>. Three-model validation framework; <strong>under 3% MAPE on an 8-month out-of-sample holdout</strong>.</li>
+      <li><strong>U.S. natural gas demand forecasts.</strong> 48 models — 12 regions × 4 end-use sectors — producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones. Driven by NWS temperature forecasts and Fed industrial production data, trained on EIA state-level consumption; walk-forward cross-validation.</li>
+      <li><strong>Real-time gas production model + Permian Basin intelligence.</strong> OLS/Ridge scaling framework that combines licensed pipeline-nominations data with EIA-914 to produce a current-month U.S. production estimate inside the two-month EIA reporting lag. Permian codebase covers daily production, egress across the four major pipelines, and Waha basis pricing.</li>
+      <li><strong>El Paso alerts + PEPCO nodal basis screen.</strong> Real-time alerting service polls the Kinder Morgan El Paso bulletin board every 5 minutes and pushes Force Majeure and maintenance notices to Microsoft Teams (response time: hours → minutes). PEPCO FTR-bidding screen covers <strong>~8.77 M hourly observations</strong> across 61 nodes and 8+ years of PJM day-ahead data.</li>
+    </ul>
+  </div>
+
+  <div class="clearfix">
+    <h3>Stevens Institute of Technology <span style="font-weight:500; color:#555;">— Hoboken, NJ</span></h3>
+    <p class="role clearfix">Quantitative Research Assistant — School of Business <span class="date">April 2025 – February 2026</span></p>
+    <ul>
+      <li>Implemented the <strong>ε-subdivision Robust PCA framework for dynamic factor portfolios</strong> in Python with Prof. Papa Momar Ndiaye — block decomposition of the eigenspectrum against a tolerance ε, Gram&ndash;Schmidt construction of the closest orthonormal basis to the prior period's factors, and rupture-detection that resets factor tracking when block-mean eigenvalues shift beyond a threshold δ. Added K-Means clustering on eigenvector features as an independent signal of factor-structure change.</li>
+      <li>Validated on ~6.5 years of daily returns across the 11 S&amp;P 500 GICS sector ETFs, spanning the COVID-19 shock and the post-pandemic inflation cycle. Fed the robust and standard covariance estimates into a mean-variance optimizer and compared cumulative returns, 126-day rolling annualized volatility, and cluster-transition timing — the robust approach stabilized factors at portfolio volatility essentially identical to standard PCA.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="edu-block clearfix">
+    <div><span class="school">Stevens Institute of Technology</span> <span class="location">Hoboken, NJ</span></div>
+    <div class="degree">Master of Science in Financial Engineering &amp; Analytics (STEM-designated)</div>
+  </div>
+  <div class="edu-block clearfix">
+    <div><span class="school">North South University</span> <span class="location">Dhaka, Bangladesh</span></div>
+    <div class="degree">Bachelor of Business Administration &nbsp;·&nbsp; Major: Finance &nbsp;·&nbsp; Minor: Mathematics</div>
+  </div>
+</section>
+
+<section>
+  <h2>Research</h2>
+  <div class="research-item">
+    <div class="paper-title">Master's Thesis — LLM-Generated Views in a Black&ndash;Litterman Portfolio</div>
+    <p class="desc">Fed repeated LLM forecasts into the Bayesian update as probabilistic views — sample mean as the view, sample variance as view uncertainty. Tested on the 50 largest S&amp;P 500 names over Feb 2024 – Jan 2025 with biweekly rebalancing. Beat the mean-variance benchmark on risk-adjusted return with steadier allocations.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Technical Skills</h2>
+  <ul class="skills-list">
+    <li><strong>Languages &amp; Tools:</strong> Python, SQL, TypeScript, JavaScript · React, Next.js, FastAPI · SQL Server, Docker, AWS · Git, GitHub, GitLab</li>
+    <li><strong>AI / LLM:</strong> LangChain · LangGraph · LangSmith · RAG · Vector Databases · LLM Agents · Prompt Engineering · Anthropic Claude &amp; OpenAI APIs</li>
+    <li><strong>Machine Learning:</strong> PyTorch · Scikit-learn · XGBoost · LightGBM · Pandas · NumPy · Time-Series Forecasting</li>
+    <li><strong>Energy Markets:</strong> Natural Gas &amp; Power · LNG Forecasting · Pipeline Capacity Analysis · ISOs / RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE) · FTR Markets</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Certifications &amp; Awards</h2>
+  <p style="margin: 3px 0;"><strong>Advanced RAG</strong> · <strong>Akuna Capital Options 101</strong> · <strong>Probability — The Science of Uncertainty and Data</strong> (MIT / edX) · <strong>Python and Statistics for Financial Analysis</strong> (Coursera) · <strong>FastAPI</strong>, <strong>Data Science / ML / DL / NLP Bootcamp</strong>, <strong>Algorithmic Trading with Python, ChatGPT, ML</strong> (Udemy)</p>
+  <p style="margin: 3px 0;">Student Member, <strong>CFA Society New York</strong></p>
+</section>
+
+</body>
+</html>

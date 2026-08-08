@@ -43,7 +43,7 @@ I'm MD Amir Khan — Agentic AI Engineer and Quantitative Analyst at DXT Commodi
 7. **Activities** — CFA Society NY, Riskfolio-Lib contribution, WorldQuant IQC
 8. **Certificates** — Advanced RAG, Akuna Options, MIT/edX, Udemy, Coursera
 9. **Skills** — AI/LLM, Programming, Quant Finance, Energy Markets, Cloud & DevOps
-10. **Contact** — Email, LinkedIn, phone, location
+10. **Contact** — Email, LinkedIn, location
 
 ---
 
