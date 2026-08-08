@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MD Amir Khan – Agentic AI Engineer & Quantitative Analyst</title>
+    <title>MD Amir Khan – AI Engineer & Quantitative Analyst</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -41,8 +41,8 @@
                     <div class="hero-text">
                         <div class="hero-eyebrow">Currently @ DXT Commodities · Stamford, CT</div>
                         <h1>MD AMIR KHAN</h1>
-                        <h2><strong>Agentic AI Engineer</strong> & Quantitative Analyst</h2>
-                        <p>AI Engineer and Quantitative Analyst at DXT Commodities building intelligent systems for LNG and natural gas markets. I design and deploy LLM-powered pipelines, automated market intelligence tools, and production ML models — combined with deep quantitative work in statistical modeling, energy market forecasting, and portfolio research. I turn raw market data into real-time trading decisions.</p>
+                        <h2><strong>AI Engineer</strong> & Quantitative Analyst</h2>
+                        <p>AI engineer and quantitative analyst at DXT Commodities, building production systems for U.S. natural gas and power markets. Sole architect on nine live systems shipped since March 2026 — LLM pipelines, forecasting models, and full-stack analytics platforms used daily by the trading desk.</p>
                         <div class="hero-buttons">
                             <a href="#contact" class="btn btn-primary">Get In Touch</a>
                             <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -56,7 +56,7 @@
                     <div class="hero-image">
                         <div class="profile-card">
                             <div class="profile-image-container">
-                                <img src="images/profile_picture.jpg" alt="MD Amir Khan – Agentic AI Engineer & Quantitative Analyst" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                                <img src="images/profile_picture.jpg" alt="MD Amir Khan – AI Engineer & Quantitative Analyst" class="profile-image" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
                                 <div class="profile-fallback" style="display: none;">
                                     <i class="fas fa-user"></i>
                                 </div>
@@ -163,8 +163,8 @@
                         </div>
                         <div class="news-content">
                             <h3>New Role</h3>
-                            <h4>Joined DXT Commodities as Agentic AI Engineer & Quantitative Analyst</h4>
-                            <p>Started full-time at DXT Commodities (Stamford, CT) in March 2026, working on LNG and natural gas market intelligence. Building Agentic RAG systems for pipeline notice parsing, LNG feed gas forecasting pipelines, and automated trading desk alerting infrastructure.</p>
+                            <h4>Joined DXT Commodities as AI Engineer & Quantitative Analyst</h4>
+                            <p>Started full-time at DXT Commodities (Stamford, CT) in March 2026 on the Market Fundamentals team, covering LNG and natural gas markets. Building LLM extraction pipelines, LNG feed-gas forecasting, and real-time trading-desk alerting infrastructure.</p>
                         </div>
                     </div>
 
@@ -201,42 +201,37 @@
                 <div class="experience-grid">
                     <div class="experience-card">
                         <div class="company-logo dxt">DXT</div>
-                        <h3>DXT Commodities</h3>
+                        <h3>DXT Commodities North America</h3>
                         <h4>Mar 2026 – Present &nbsp;·&nbsp; Full-time &nbsp;·&nbsp; Stamford, CT (Hybrid)</h4>
 
-                        <h3 class="role-title">Agentic AI Engineer</h3>
+                        <h3 class="role-title">Applied AI Engineer &amp; Quantitative Analyst — Market Fundamentals (LNG &amp; Power)</h3>
                         <ul>
-                            <li>Designed and built an Agentic RAG system using LangChain and LangGraph to parse unstructured pipeline maintenance notices across 6 operator portal formats — architecting the full pipeline from document ingestion and chunking strategy through embedding model selection, vector store indexing, hybrid retrieval (dense + BM25), and LLM-based structured field extraction</li>
-                            <li>Engineered prompt templates and structured output schemas for capacity impact extraction — iterating on chain-of-thought prompting and output parsers to reliably extract operator, affected capacity (MMcf/d), duration, and constraint type from free-text notices with varying formats</li>
-                            <li>Implemented hybrid retrieval with contextual compression (dense embeddings + BM25 ensemble) and MMR re-ranking over a vector store of historical pipeline notices, improving extraction accuracy on ambiguous capacity constraint language by reducing irrelevant context passed to the LLM</li>
-                            <li>Built evaluation harness using RAGAS-style metrics (faithfulness, answer relevancy, context precision) to benchmark RAG pipeline quality across notice types and operator formats, enabling systematic prompt and retrieval tuning</li>
-                            <li>Deployed full-stack AI pipeline on AWS EC2 — FastAPI backend exposing RAG extraction endpoints, SQL Server persistence layer for parsed notices, and Power BI dashboard for trading desk consumption — covering 23 interstate pipeline operators</li>
-                        </ul>
-
-                        <h3 class="role-title">Quantitative Analyst – Market Fundamentals (LNG & Power)</h3>
-                        <ul>
-                            <li>Designed and built a Permian Basin gas market intelligence system modeling daily production (~22–25 Bcf/d), pipeline egress capacity across 4 major interstate pipelines, and supply-demand balance to predict Waha basis pricing — directly supporting trading desk decisions</li>
-                            <li>Developed a real-time production estimation model using Genscape pipeline scrape data and EIA 914 reports, training a scaling model (OLS/Ridge regression) with R² and MAE validation to bridge the 2-month EIA reporting lag</li>
-                            <li>Built a US LNG feed gas forecasting pipeline covering 126 active export trains across 13 terminals (~22,600 MMcf/d nameplate), with 3-model validation framework achieving &lt;3% MAPE on 8-month out-of-sample holdout</li>
-                            <li>Built an automated scraping and alerting system for EPNG critical notices — polling Kinder Morgan's EBB portal every 5 minutes, deduplicating notices, and pushing real-time Force Majeure and maintenance alerts to Microsoft Teams via webhook, enabling the trading desk to react within minutes of posting</li>
-                            <li>Engineered end-to-end quantitative pipelines in Python and SQL — from raw data ingestion (Genscape, EIA, FERC bulletin boards) through statistical modeling, cross-validation, and automated forecast output — replacing manual workflows across production estimation, capacity tracking, and pricing analysis</li>
+                            <li><strong>Pipeline transparency platform.</strong> Built the scraping and LLM extraction pipeline that reads maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 different portal architectures (15+ format-specific scrapers covering HTML, PDF, Excel, and ASP.NET with TLS-impersonation for WAF-protected sites). Structured extraction with the Claude API turns free-form notices into typed capacity-impact records. FastAPI + SQL Server. Tracks 40+ active and 198+ upcoming restrictions on a peak day.</li>
+                            <li><strong>WattsApp — PJM fleet analytics.</strong> Full-stack platform covering 4,305 units / 232.5 GW nameplate across 2,262 plants in 13 states + DC. Overview, thermal, non-thermal, plants, insights, and natural-language query views used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.</li>
+                            <li><strong>Wattson — multi-ISO power price analytics.</strong> Live platform covering PJM, ERCOT, NYISO, MISO, and ISO-NE. Historical LMPs by energy/congestion/loss component, forward-contract settlements with strip aggregation, and a Price ⇄ Heat-Rate toggle that connects power and gas.</li>
+                            <li><strong>U.S. LNG feed-gas forecasting.</strong> Pipeline covering 126 export trains at 13 terminals (~22,600 MMcf/d nameplate). Three-model validation framework; under 3% MAPE on an 8-month out-of-sample holdout.</li>
+                            <li><strong>U.S. natural gas demand forecasts.</strong> 48 models — 12 regions × 4 end-use sectors — producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones. Driven by NWS temperature forecasts and Fed industrial production data, trained on EIA state-level consumption; walk-forward cross-validation.</li>
+                            <li><strong>Real-time gas production model + Permian Basin intelligence.</strong> OLS/Ridge scaling framework that combines licensed pipeline-nominations data with EIA-914 to produce a current-month U.S. production estimate inside the two-month EIA reporting lag. Permian codebase covers daily production, egress across the four major pipelines, and Waha basis pricing.</li>
+                            <li><strong>El Paso alerts + PEPCO nodal basis screen.</strong> Real-time alerting service polls the Kinder Morgan El Paso bulletin board every 5 minutes and pushes Force Majeure and maintenance notices to Microsoft Teams (response time: hours → minutes). PEPCO FTR-bidding screen covers ~8.77 M hourly observations across 61 nodes and 8+ years of PJM day-ahead data.</li>
                         </ul>
 
                         <div class="skills-used">
                             <span>Python</span>
                             <span>LangChain</span>
                             <span>LangGraph</span>
-                            <span>Agentic RAG</span>
-                            <span>Vector Stores</span>
-                            <span>Hybrid Search</span>
+                            <span>Claude API</span>
+                            <span>RAG</span>
                             <span>FastAPI</span>
-                            <span>AWS EC2</span>
-                            <span>SQL</span>
-                            <span>OLS/Ridge Regression</span>
+                            <span>Next.js</span>
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>SQL Server</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>XGBoost</span>
+                            <span>OLS / Ridge</span>
                             <span>LNG Forecasting</span>
                             <span>Pipeline Capacity Analysis</span>
-                            <span>EIA/Genscape/FERC</span>
-                            <span>Power BI</span>
                         </div>
                     </div>
 
@@ -245,26 +240,20 @@
                             <img src="https://www.stevens.edu/sites/default/files/2020-08/stevens-logo-red.png" alt="Stevens Institute of Technology" onerror="this.style.display='none'; this.parentElement.textContent='Stevens';">
                         </div>
                         <h3>Stevens Institute of Technology</h3>
-                        <h4>Jan 2024 – Present &nbsp;·&nbsp; Part-time &nbsp;·&nbsp; Hoboken, NJ (Hybrid)</h4>
-                        <h3 class="role-title">Quantitative Portfolio Research Analyst</h3>
+                        <h4>Apr 2025 – Feb 2026 &nbsp;·&nbsp; Hoboken, NJ</h4>
+                        <h3 class="role-title">Quantitative Research Assistant — School of Business</h3>
                         <ul>
-                            <li>Contributing to research on Robust PCA for dynamic factor portfolio updates — improving stability of risk factors and cutting rebalancing costs by 15%</li>
-                            <li>Implemented Python-based simulations using corporate bond spread data to study eigenvalue grouping, factor smoothness, and covariance structure robustness</li>
-                            <li>Developed algorithms for tracking dynamic factors and detecting data structure ruptures to enhance portfolio timing decisions</li>
-                            <li>Developed and validated ML models (Ridge regression, LightGBM, neural networks) for predicting short-term auction price movements, option pricing, and credit default probabilities</li>
-                            <li>Researched and implemented advanced risk models including VaR, CVaR, stress testing, and credit risk modeling for MBS, corporate loans, and structured products — covering PD, LGD, and EAD</li>
-                            <li>Built and analyzed models for mortgage and loan portfolio performance, incorporating prepayment risk, duration/convexity analysis, and sensitivity to macroeconomic variables</li>
-                            <li>Integrated risk parity, covariance shrinkage, and multi-asset volatility estimation techniques to enhance portfolio resilience and improve Sharpe ratios under varying market regimes</li>
+                            <li>Implemented the <strong>ε-subdivision Robust PCA framework for dynamic factor portfolios</strong> in Python with Prof. Papa Momar Ndiaye — block decomposition of the eigenspectrum against a tolerance ε, Gram–Schmidt construction of the closest orthonormal basis to the prior period's factors, and rupture-detection that resets factor tracking when block-mean eigenvalues shift beyond a threshold δ. Added K-Means clustering on eigenvector features as an independent signal of factor-structure change.</li>
+                            <li>Validated on ~6.5 years of daily returns across the 11 S&amp;P 500 GICS sector ETFs, spanning the COVID-19 shock and the post-pandemic inflation cycle. Fed the robust and standard covariance estimates into a mean-variance optimizer and compared cumulative returns, 126-day rolling annualized volatility, and cluster-transition timing — the robust approach stabilized factors at portfolio volatility essentially identical to standard PCA.</li>
                         </ul>
                         <div class="skills-used">
                             <span>Python</span>
                             <span>Robust PCA</span>
-                            <span>Machine Learning</span>
-                            <span>Risk Modeling</span>
-                            <span>VaR/CVaR</span>
-                            <span>LightGBM</span>
-                            <span>Portfolio Optimization</span>
-                            <span>Credit Risk</span>
+                            <span>Eigenspectrum Analysis</span>
+                            <span>K-Means Clustering</span>
+                            <span>Covariance Estimation</span>
+                            <span>Mean-Variance Optimization</span>
+                            <span>Time-Series</span>
                         </div>
                     </div>
 
@@ -581,29 +570,7 @@
                         <div class="activity-content">
                             <h3>Student Membership</h3>
                             <h4>CFA Society New York</h4>
-                            <p>Student member, actively engaged in professional events</p>
-                        </div>
-                    </div>
-
-                    <div class="activity-card">
-                        <div class="activity-icon">
-                            <i class="fab fa-github"></i>
-                        </div>
-                        <div class="activity-content">
-                            <h3>Open Source Contribution</h3>
-                            <h4>Riskfolio-Lib</h4>
-                            <p>Contributing to a leading Python library for portfolio optimization and risk management</p>
-                        </div>
-                    </div>
-
-                    <div class="activity-card">
-                        <div class="activity-icon">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <div class="activity-content">
-                            <h3>Competition Participation</h3>
-                            <h4>WorldQuant's 2023 International Quant Championship</h4>
-                            <p>Competed in crafting & testing advanced trading strategies</p>
+                            <p>Student member, actively engaged in professional events.</p>
                         </div>
                     </div>
                 </div>
@@ -702,27 +669,6 @@
                         <div class="certificate-icon udemy">
                             udemy
                         </div>
-                        <h3>Fixed Income Analytics: Pricing and Risk Management</h3>
-                        <h4>Udemy</h4>
-                        <span class="cert-date">July 2025</span>
-                        <p>Specialized fixed income course covering bond pricing, yield curve analysis, duration, convexity, and interest rate risk management.</p>
-                        <div class="cert-skills">
-                            <span>Fixed Income</span>
-                            <span>Bond Pricing</span>
-                            <span>Yield Curves</span>
-                            <span>Risk Management</span>
-                        </div>
-                        <div class="cert-links">
-                            <a href="https://www.udemy.com/certificate/UC-bd6d0198-3ed8-4d62-a71d-3572770b8167/" target="_blank" class="cert-link">
-                                <i class="fas fa-external-link-alt"></i>View Certificate
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="certificate-card">
-                        <div class="certificate-icon udemy">
-                            udemy
-                        </div>
                         <h3>FastAPI - The Complete Course 2025 (Beginner + Advanced)</h3>
                         <h4>Udemy</h4>
                         <span class="cert-date">July 2025</span>
@@ -791,155 +737,94 @@
                 <h2 class="section-title">Technical Skills</h2>
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h3>Programming Languages</h3>
+                        <h3>Languages</h3>
                         <div class="skill-items">
                             <div class="skill-item">
-                                <span class="python">Python</span>
+                                <span>Python</span>
                                 <div class="skill-bar">
                                     <div class="skill-progress" style="width: 95%"></div>
                                 </div>
                             </div>
-                            
                             <div class="skill-item">
-                                <span class="sql">SQL</span>
+                                <span>SQL</span>
                                 <div class="skill-bar">
-                                    <div class="skill-progress" style="width: 85%"></div>
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <span>JavaScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
                     <div class="skill-category">
-                        <h3>Data Science & ML Libraries</h3>
-                        <div class="skill-tags">
-                            <span class="numpy">NumPy</span>
-                            <span class="pandas">Pandas</span>
-                            <span class="scipy">SciPy</span>
-                            <span class="scikit">Scikit-learn</span>
-                            <span class="pytorch">PyTorch</span>
-                            <span class="tensorflow">TensorFlow</span>
-                            <span class="keras">Keras</span>
-                            <span class="matplotlib">Matplotlib</span>
-                            <span class="seaborn">Seaborn</span>
-                            <span class="plotly">Plotly</span>
-                            <span class="openbb">OpenBB</span>
-                            <span class="statsmodels">Statsmodels</span>
-                            <span class="zipline">Zipline</span>
-                            <span class="pyfolio">PyFolio</span>
-                            <span class="riskfolio">Riskfolio-Lib</span>
-                            <span class="vectorbt">Vectorbt</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Cloud & DevOps</h3>
-                        <div class="skill-tags">
-                            <span>AWS EC2</span>
-                            <span>Google Cloud</span>
-                            <span>Azure</span>
-                            <span>Azure Data Factory</span>
-                            <span>Azure Synapse Analytics</span>
-                            <span>Azure Data Lake Storage (ADLS)</span>
-                            <span class="docker">Docker</span>
-                            <span>Kubernetes</span>
-                            <span>Jenkins</span>
-                            <span>GitHub Actions</span>
-                            <span>Terraform</span>
-                            <span>Ansible</span>
-                            <span>CI/CD</span>
-                            <span>Infrastructure as Code</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>AI Engineering & LLM</h3>
+                        <h3>AI / LLM</h3>
                         <div class="skill-tags">
                             <span>LangChain</span>
                             <span>LangGraph</span>
-                            <span>RAG (Retrieval-Augmented Generation)</span>
-                            <span>Agentic RAG</span>
-                            <span>Vector Stores</span>
-                            <span>Embeddings</span>
-                            <span>Hybrid Search (BM25 + Dense)</span>
-                            <span>HyDE</span>
-                            <span>CRAG / Self-RAG</span>
-                            <span>Graph RAG</span>
-                            <span>RAGAS Evaluation</span>
                             <span>LangSmith</span>
+                            <span>RAG</span>
+                            <span>Vector Databases</span>
+                            <span>LLM Agents</span>
                             <span>Prompt Engineering</span>
-                            <span>LLM Pipelines</span>
+                            <span>Structured Output Extraction</span>
+                            <span>Anthropic Claude API</span>
+                            <span>OpenAI API</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
-                        <h3>Development & Tools</h3>
+                        <h3>Machine Learning</h3>
                         <div class="skill-tags">
-                            <span class="jupyter">Jupyter Notebook</span>
-                            <span class="git">Git</span>
-                            <span class="github">GitHub</span>
-                            <span class="vscode">VS Code</span>
-                            <span class="fastapi">FastAPI</span>
-                            <span class="streamlit">Streamlit</span>
-                            <span class="tableau">Tableau</span>
-                            <span>Power BI</span>
-                            <span class="excel">Excel</span>
-                            <span>MLflow</span>
-                            <span>Kubeflow</span>
-                            <span>Apache Superset</span>
+                            <span>PyTorch</span>
+                            <span>Scikit-learn</span>
+                            <span>XGBoost</span>
+                            <span>LightGBM</span>
+                            <span>Statsmodels</span>
+                            <span>Pandas</span>
+                            <span>NumPy</span>
+                            <span>Time-Series Forecasting</span>
+                            <span>Cross-Validation</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
-                        <h3>Data Science & Analytics</h3>
+                        <h3>Full-Stack &amp; Infrastructure</h3>
                         <div class="skill-tags">
-                            <span>Machine Learning</span>
-                            <span>Deep Learning</span>
-                            <span>Statistical Modeling</span>
-                            <span>Predictive Analytics</span>
-                            <span>Feature Engineering</span>
-                            <span>Model Deployment</span>
-                            <span>A/B Testing</span>
-                            <span>Data Visualization</span>
-                            <span>Time Series Analysis</span>
-                            <span>Natural Language Processing</span>
-                            <span>Computer Vision</span>
-                            <span>Recommendation Systems</span>
+                            <span>React</span>
+                            <span>Next.js</span>
+                            <span>FastAPI</span>
+                            <span>SQL Server</span>
+                            <span>SQLAlchemy</span>
+                            <span>Docker</span>
+                            <span>AWS</span>
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>GitLab</span>
+                            <span>REST APIs</span>
                         </div>
                     </div>
 
                     <div class="skill-category">
-                        <h3>Quantitative Finance</h3>
+                        <h3>Energy Markets</h3>
                         <div class="skill-tags">
-                            <span>Portfolio Optimization</span>
-                            <span>Risk Management</span>
-                            <span>Algorithmic Trading</span>
-                            <span>Derivatives Pricing</span>
-                            <span>Backtesting</span>
-                            <span>VaR & CVaR</span>
-                            <span>Factor Modeling</span>
-                            <span>Market Microstructure</span>
-                            <span>Fixed Income Analytics</span>
-                            <span>Options Pricing</span>
-                            <span>Stress Testing</span>
-                            <span>Performance Attribution</span>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <h3>Energy Markets & Infrastructure</h3>
-                        <div class="skill-tags">
-                            <span>LNG Feed Gas Forecasting</span>
+                            <span>Natural Gas &amp; Power Fundamentals</span>
+                            <span>LNG Feed-Gas Forecasting</span>
                             <span>Pipeline Capacity Analysis</span>
-                            <span>Waha / Henry Hub Basis</span>
-                            <span>Natural Gas Production Modeling</span>
-                            <span>EIA 914 Data</span>
-                            <span>Genscape Data</span>
-                            <span>FERC Bulletin Boards</span>
-                            <span>Kinder Morgan EBB</span>
-                            <span>Supply-Demand Balancing</span>
-                            <span>Force Majeure Monitoring</span>
-                            <span>MS Teams Webhooks</span>
-                            <span>LLM-Powered Notice Parsing</span>
+                            <span>ISOs / RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE)</span>
+                            <span>Wholesale Power Pricing (LMPs)</span>
+                            <span>FTR Markets</span>
+                            <span>Heat-Rate Analysis</span>
+                            <span>EIA / NWS / FERC Data</span>
                         </div>
                     </div>
                 </div>
