@@ -473,17 +473,6 @@ section {
   position: relative;
 }
 
-.section-title::before {
-  content: '';
-  display: inline-block;
-  width: 32px;
-  height: 2px;
-  background: var(--gradient-primary);
-  margin-right: 14px;
-  vertical-align: middle;
-  border-radius: 2px;
-}
-
 /* ============================================
    ABOUT
    ============================================ */
