@@ -1,0 +1,154 @@
+%----------------------------------------------------------------------------------------
+% MD AMIR KHAN — Resume (LaTeX)
+% Positioning: Applied AI Engineer — production LLM systems, agentic RAG, forecasting
+% Style: classic academic single-column, small-caps section heads, hrule dividers,
+% two-column entry rows (institution/role left, location/dates right).
+% Reference format: Kowsher (kowsher.github.io/assets/Resume_Kowsher.pdf).
+%
+% Compile: Overleaf (pdfLaTeX) or local `pdflatex resume.tex` (twice).
+%----------------------------------------------------------------------------------------
+
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[margin=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{textcomp}
+\usepackage{lmodern}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{ragged2e}
+\usepackage[hidelinks,colorlinks=true,urlcolor=blue!60!black,linkcolor=black]{hyperref}
+
+\definecolor{sectioncolor}{HTML}{111111}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\pagestyle{empty}
+
+% Section header: small caps, hrule underneath (no overlap this time)
+\titleformat{\section}
+  {\normalfont\scshape\large\color{sectioncolor}}
+  {}{0em}{}[\vspace{2pt}\titlerule\vspace{2pt}]
+\titlespacing*{\section}{0pt}{10pt}{4pt}
+
+% Compact bulleted list
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  parsep=0pt,
+  topsep=2pt,
+  label={\small\textbullet}
+}
+
+% Two-column row helpers
+\newcommand{\entryrow}[2]{%
+  \noindent\begin{tabularx}{\linewidth}{@{}X@{}r@{}}%
+    #1 & #2 \\
+  \end{tabularx}\par\vspace{1pt}%
+}
+
+\newcommand{\headline}[4]{%
+  \entryrow{\textbf{#1}}{\normalfont\itshape #2}%
+  \entryrow{\textit{#3}}{\normalfont\itshape #4}%
+}
+
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% ---------- HEADER ----------
+\begin{center}
+  {\LARGE\bfseries MD AMIR KHAN}\\[2pt]
+  {\small\itshape Applied AI Engineer \; \textperiodcentered\; LLM Systems \& Quantitative Analytics}\\[3pt]
+  \small
+  \href{mailto:mkhan37@stevens.edu}{mkhan37@stevens.edu}
+  \; \textperiodcentered\;
+  Stamford, CT
+  \; \textperiodcentered\;
+  \href{https://github.com/Mkhan2317}{github.com/Mkhan2317}
+  \; \textperiodcentered\;
+  \href{https://linkedin.com/in/amirkhan2317}{linkedin.com/in/amirkhan2317}
+  \; \textperiodcentered\;
+  \href{https://mkhan2317.github.io}{mkhan2317.github.io}
+\end{center}
+
+% ---------- SUMMARY ----------
+\section*{Summary}
+\small
+Build production \textbf{LLM systems} --- structured extraction, agentic RAG, multi-model inference --- and the \textbf{ML forecasting stack} that consumes them, running daily on the DXT Commodities gas \& power trading desk.
+
+% ---------- EDUCATION ----------
+\section*{Education}
+\small
+\headline{Stevens Institute of Technology}{Hoboken, NJ, USA}{Master of Science in Financial Engineering \& Analytics (STEM-designated)}{}
+\vspace{4pt}
+
+\headline{North South University}{Dhaka, Bangladesh}{Bachelor of Business Administration \; \textperiodcentered\; Major: Finance \; \textperiodcentered\; Minor: Mathematics}{}
+
+% ---------- EXPERIENCE ----------
+\section*{Experience}
+\small
+
+% --- DXT ---
+\headline{DXT Commodities North America}{Stamford, CT}{Applied AI Engineer \& Quantitative Analyst --- Market Fundamentals (LNG \& Power)}{March 2026 -- Present}
+\begin{itemize}
+  \item \textbf{Pipeline transparency platform --- LLM structured extraction at production scale.} Built the scraping and LLM extraction pipeline reading maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 different portal architectures (15+ format-specific scrapers: HTML, PDF, Excel, ASP.NET with TLS impersonation for WAF-protected sites). \textbf{Structured extraction on the Claude API} turns free-form notices into typed capacity-impact records with a caching layer that cuts LLM calls on unchanged input. FastAPI + SQL Server; tracks 40+ active and 198+ upcoming restrictions on a peak day.
+  \item \textbf{WattsApp --- full-stack PJM analytics with natural-language query.} Full-stack platform covering \textbf{4,305 units / 232.5\,GW nameplate} across 2,262 plants in 13 states + DC. Overview, thermal, non-thermal, plants, insights, and an \textbf{LLM-powered natural-language query view} used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.
+  \item \textbf{U.S. LNG feed-gas forecasting.} End-to-end forecasting pipeline covering \textbf{126 export trains at 13 terminals ($\sim$22,600\,MMcf/d nameplate)}. Three-model validation framework; \textbf{under 3\% MAPE} on an 8-month out-of-sample holdout.
+  \item \textbf{U.S. natural-gas demand forecasts.} 48 models --- 12 regions $\times$ 4 end-use sectors --- producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones; walk-forward cross-validation. Driven by NWS temperature forecasts and Fed industrial-production data, trained on EIA state-level consumption.
+  \item \textbf{Wattson --- multi-ISO power-price analytics.} Live platform for PJM, ERCOT, NYISO, MISO, and ISO-NE: historical LMPs by energy / congestion / marginal-loss component, forward-contract settlements with strip aggregation, and a Price\,$\rightleftarrows$\,Heat-Rate toggle connecting power and gas markets.
+  \item \textbf{Real-time gas-production model \& Permian Basin intelligence.} OLS/Ridge scaling framework combining licensed pipeline-nominations data with EIA-914 to produce a current-month U.S. production estimate inside the two-month EIA reporting lag. Permian codebase covers daily production, egress across the four major pipelines, and Waha basis pricing.
+  \item \textbf{Pipeline Force Majeure alerts \& PEPCO nodal-basis screen.} Real-time alerting service polls electronic bulletin boards across \textbf{32 U.S. interstate gas pipelines} every 5 minutes and pushes notices to Microsoft Teams (response time: hours\,$\rightarrow$\,minutes). PEPCO FTR-bidding screen covers \textbf{$\sim$8.77\,M hourly observations} across 61 nodes and 8+ years of PJM day-ahead settlement data.
+\end{itemize}
+
+\vspace{4pt}
+% --- Stevens Research Assistant (LLM forecasting) — MSc thesis ---
+\headline{Stevens Institute of Technology}{Hoboken, NJ}{Research Assistant --- LLM-Generated Views in a Black--Litterman Portfolio (MSc Thesis)}{January 2024 -- December 2025}
+\begin{itemize}
+  \item Designed and built an \textbf{LLM-powered forecasting system} treating language models as queryable, uncertainty-aware forecasters rather than static tools --- a case study in structured output extraction, multi-model evaluation, and confidence-aware system design.
+  \item Built a \textbf{multi-LLM inference pipeline} (GPT-4o-mini, LLaMA-3.1, Gemma, Qwen-2) using \textbf{vLLM} for high-throughput serving; structured prompts convert price, sector, and news data into scalar return forecasts.
+  \item Solved the \textbf{uncertainty-quantification problem} by repeated querying and treating output dispersion as a Bayesian confidence signal --- sample mean fed as the view, sample variance as view uncertainty, into a downstream \textbf{Black--Litterman} update rather than being discarded.
+  \item Full backtesting pipeline: 50 largest S\&P 500 names, \textbf{Feb 2024 -- Jan 2025}, biweekly rebalancing, benchmarked against 3 baseline strategies; \textbf{best model (LLaMA-3.1) beat the S\&P 500 benchmark --- Sharpe 1.29 vs.\ 0.87}.
+\end{itemize}
+
+\vspace{4pt}
+% --- Stevens QRA (Ndiaye Robust PCA) ---
+\headline{Stevens Institute of Technology}{Hoboken, NJ}{Quantitative Research Assistant --- School of Business}{April 2025 -- February 2026}
+\begin{itemize}
+  \item Implemented the \textbf{$\varepsilon$-subdivision Robust PCA framework for dynamic factor portfolios} in Python with Prof.\ Papa Momar Ndiaye --- block decomposition of the eigenspectrum against a tolerance $\varepsilon$, Gram--Schmidt construction of the closest orthonormal basis to the prior period's factors, and rupture-detection that resets factor tracking when block-mean eigenvalues shift beyond a threshold $\delta$. Added K-Means clustering on eigenvector features as an independent signal of factor-structure change.
+  \item Validated on $\sim$6.5 years of daily returns across the 11 S\&P 500 GICS sector ETFs, spanning the COVID-19 shock and the post-pandemic inflation cycle. Fed robust and standard covariance estimates into a mean-variance optimizer; the robust approach stabilized factors at portfolio volatility essentially identical to standard PCA.
+\end{itemize}
+
+% ---------- TEACHING ----------
+\section*{Teaching Experience}
+\small
+\headline{Stevens Institute of Technology}{Hoboken, NJ}{Teaching Assistant --- Quantitative Portfolio Theory (Financial Engineering program)}{September 2025 -- December 2025}
+
+% ---------- TECHNICAL SKILLS ----------
+\section*{Technical Skills}
+\small
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{AI / LLM Engineering:} & LangChain \textperiodcentered{} LangGraph \textperiodcentered{} LangSmith \textperiodcentered{} RAG (HyDE, CRAG, Self-RAG, Graph RAG, Agentic RAG) \textperiodcentered{} LLM Agents \& Subagents \textperiodcentered{} Structured Output Extraction \textperiodcentered{} Prompt Engineering \textperiodcentered{} Multi-LLM Serving (vLLM) \textperiodcentered{} Anthropic Claude \& OpenAI APIs \textperiodcentered{} Model Context Protocol (MCP) \\[3pt]
+  \textbf{Machine Learning:} & Scikit-learn \textperiodcentered{} XGBoost \textperiodcentered{} Ridge / OLS \textperiodcentered{} Statsmodels \textperiodcentered{} Pandas \textperiodcentered{} NumPy \textperiodcentered{} Time-Series Forecasting \textperiodcentered{} Walk-Forward Cross-Validation \textperiodcentered{} Robust PCA \textperiodcentered{} Black--Litterman \\[3pt]
+  \textbf{Full-Stack \& Infra:} & FastAPI \textperiodcentered{} Next.js \textperiodcentered{} React \textperiodcentered{} SQLAlchemy \textperiodcentered{} SQL Server \textperiodcentered{} Docker \textperiodcentered{} AWS \textperiodcentered{} REST APIs \textperiodcentered{} Git / GitHub / GitLab \\[3pt]
+  \textbf{Languages:} & Python \textperiodcentered{} SQL \textperiodcentered{} TypeScript \textperiodcentered{} JavaScript \\[3pt]
+  \textbf{Domain (Energy):} & U.S. Natural Gas \& Power Fundamentals \textperiodcentered{} LNG Feed-Gas \textperiodcentered{} Pipeline Capacity Analysis \textperiodcentered{} ISOs / RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE) \textperiodcentered{} Wholesale LMPs \textperiodcentered{} FTR Markets \textperiodcentered{} Heat-Rate Analysis \\
+\end{tabularx}
+
+% ---------- CERTIFICATIONS ----------
+\section*{Certifications \& Awards}
+\small
+\begin{itemize}
+  \item \textbf{Anthropic Education --- Certified Track} (Anthropic, 2026): Claude API, Claude Code, Model Context Protocol (Intro + Advanced), Agent Skills, Subagents.
+  \item \textbf{Advanced RAG} (CampusX, 2026) \textperiodcentered{} \textbf{AI Engineer Bootcamp 2026: LLMs, RAG, Agents, Vector DBs} (Udemy, 2026) \textperiodcentered{} \textbf{Vector Databases: Fundamentals to Production} (Udemy, 2026).
+  \item \textbf{Full-Stack Web Track} (Modern JavaScript, TypeScript, React, Next.js, Node/Microservices, Full-Stack Bootcamp; Udemy, 2026) \textperiodcentered{} \textbf{Developer Foundations} (Linux CLI, Git \& GitHub; Udemy, 2026).
+  \item \textbf{Probability --- The Science of Uncertainty and Data} (MIT / edX, 2022) \textperiodcentered{} \textbf{Python and Statistics for Financial Analysis} (Coursera, 2022) \textperiodcentered{} \textbf{Akuna Capital Options 101} (2025) \textperiodcentered{} \textbf{Algorithmic Trading with Python, ChatGPT, ML} (Udemy, 2025) \textperiodcentered{} \textbf{FastAPI Complete Course} (Udemy, 2025).
+  \item Student Member, \textbf{CFA Society New York}.
+\end{itemize}
+
+\end{document}
