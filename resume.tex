@@ -80,7 +80,7 @@
 % ---------- SUMMARY ----------
 \section*{Summary}
 \small
-Build production \textbf{LLM systems} --- structured extraction, agentic RAG, multi-model inference --- and the \textbf{ML forecasting stack} that consumes them, running daily on the DXT Commodities gas \& power trading desk.
+Applied AI engineer building production \textbf{LLM systems} --- structured extraction, agentic RAG, multi-model inference --- and the \textbf{ML forecasting stack} that consumes them, delivered end-to-end from FastAPI back-ends to Next.js / React front-ends and running daily on the DXT Commodities gas \& power trading desk.
 
 % ---------- EDUCATION ----------
 \section*{Education}
@@ -97,8 +97,8 @@ Build production \textbf{LLM systems} --- structured extraction, agentic RAG, mu
 % --- DXT ---
 \headline{DXT Commodities North America}{Stamford, CT}{Applied AI Engineer \& Quantitative Analyst --- Market Fundamentals (LNG \& Power)}{March 2026 -- Present}
 \begin{itemize}
-  \item \textbf{Pipeline transparency platform --- LLM structured extraction at production scale.} Built the scraping and LLM extraction pipeline reading maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 different portal architectures (15+ format-specific scrapers: HTML, PDF, Excel, ASP.NET with TLS impersonation for WAF-protected sites). \textbf{Structured extraction on the Claude API} turns free-form notices into typed capacity-impact records with a caching layer that cuts LLM calls on unchanged input. FastAPI + SQL Server; tracks 40+ active and 198+ upcoming restrictions on a peak day.
-  \item \textbf{WattsApp --- full-stack PJM analytics with natural-language query.} Full-stack platform covering \textbf{4,305 units / 232.5\,GW nameplate} across 2,262 plants in 13 states + DC. Overview, thermal, non-thermal, plants, insights, and an \textbf{LLM-powered natural-language query view} used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.
+  \item \textbf{Pipeline transparency platform --- LLM structured extraction at production scale.} Built the scraping and LLM extraction pipeline reading maintenance and capacity notices from 19 U.S. interstate gas pipelines across 8 different portal architectures (15+ format-specific scrapers: HTML, PDF, Excel, ASP.NET with TLS impersonation for WAF-protected sites). \textbf{Structured extraction on the Claude API} turns free-form notices into typed capacity-impact records with a caching layer that cuts LLM calls on unchanged input. FastAPI microservices + SQL Server; REST APIs; tracks 40+ active and 198+ upcoming restrictions on a peak day.
+  \item \textbf{WattsApp --- full-stack PJM analytics deployed daily to the power desk.} \textbf{LLM-powered natural-language query view}, plus overview, thermal, non-thermal, plants, and insights modules covering \textbf{4,305 units / 232.5\,GW nameplate} across 2,262 plants in 13 states + DC. Next.js + React + TypeScript, FastAPI, SQL Server, Docker, REST APIs.
   \item \textbf{U.S. LNG feed-gas forecasting.} End-to-end forecasting pipeline covering \textbf{126 export trains at 13 terminals ($\sim$22,600\,MMcf/d nameplate)}. Three-model validation framework; \textbf{under 3\% MAPE} on an 8-month out-of-sample holdout.
   \item \textbf{U.S. natural-gas demand forecasts.} 48 models --- 12 regions $\times$ 4 end-use sectors --- producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones; walk-forward cross-validation. Driven by NWS temperature forecasts and Fed industrial-production data, trained on EIA state-level consumption.
   \item \textbf{Wattson --- multi-ISO power-price analytics.} Live platform for PJM, ERCOT, NYISO, MISO, and ISO-NE: historical LMPs by energy / congestion / marginal-loss component, forward-contract settlements with strip aggregation, and a Price\,$\rightleftarrows$\,Heat-Rate toggle connecting power and gas markets.
@@ -133,10 +133,10 @@ Build production \textbf{LLM systems} --- structured extraction, agentic RAG, mu
 \section*{Technical Skills}
 \small
 \begin{tabularx}{\linewidth}{@{}l X@{}}
+  \textbf{Full-Stack \& Infra:} & FastAPI \textperiodcentered{} Next.js \textperiodcentered{} React \textperiodcentered{} TypeScript \textperiodcentered{} SQLAlchemy \textperiodcentered{} SQL Server \textperiodcentered{} Docker \textperiodcentered{} AWS \textperiodcentered{} Microservices \textperiodcentered{} REST APIs \textperiodcentered{} Git / GitHub / GitLab \\[3pt]
   \textbf{AI / LLM Engineering:} & LangChain \textperiodcentered{} LangGraph \textperiodcentered{} LangSmith \textperiodcentered{} RAG (HyDE, CRAG, Self-RAG, Graph RAG, Agentic RAG) \textperiodcentered{} LLM Agents \& Subagents \textperiodcentered{} Structured Output Extraction \textperiodcentered{} Prompt Engineering \textperiodcentered{} Multi-LLM Serving (vLLM) \textperiodcentered{} Anthropic Claude \& OpenAI APIs \textperiodcentered{} Model Context Protocol (MCP) \\[3pt]
-  \textbf{Machine Learning:} & Scikit-learn \textperiodcentered{} XGBoost \textperiodcentered{} Ridge / OLS \textperiodcentered{} Statsmodels \textperiodcentered{} Pandas \textperiodcentered{} NumPy \textperiodcentered{} Time-Series Forecasting \textperiodcentered{} Walk-Forward Cross-Validation \textperiodcentered{} Robust PCA \textperiodcentered{} Black--Litterman \\[3pt]
-  \textbf{Full-Stack \& Infra:} & FastAPI \textperiodcentered{} Next.js \textperiodcentered{} React \textperiodcentered{} SQLAlchemy \textperiodcentered{} SQL Server \textperiodcentered{} Docker \textperiodcentered{} AWS \textperiodcentered{} REST APIs \textperiodcentered{} Git / GitHub / GitLab \\[3pt]
   \textbf{Languages:} & Python \textperiodcentered{} SQL \textperiodcentered{} TypeScript \textperiodcentered{} JavaScript \\[3pt]
+  \textbf{Machine Learning:} & Scikit-learn \textperiodcentered{} XGBoost \textperiodcentered{} Ridge / OLS \textperiodcentered{} Statsmodels \textperiodcentered{} Pandas \textperiodcentered{} NumPy \textperiodcentered{} Time-Series Forecasting \textperiodcentered{} Walk-Forward Cross-Validation \textperiodcentered{} Robust PCA \textperiodcentered{} Black--Litterman \\[3pt]
   \textbf{Domain (Energy):} & U.S. Natural Gas \& Power Fundamentals \textperiodcentered{} LNG Feed-Gas \textperiodcentered{} Pipeline Capacity Analysis \textperiodcentered{} ISOs / RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE) \textperiodcentered{} Wholesale LMPs \textperiodcentered{} FTR Markets \textperiodcentered{} Heat-Rate Analysis \\
 \end{tabularx}
 
