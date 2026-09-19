@@ -43,7 +43,7 @@
                         <div class="hero-eyebrow">Currently @ DXT Commodities · Stamford, CT</div>
                         <h1>MD AMIR KHAN</h1>
                         <h2><strong>Applied AI Engineer</strong> & Quantitative Analyst</h2>
-                        <p>Applied AI engineer and quantitative analyst at DXT Commodities, building production systems for U.S. natural gas and power markets — LLM pipelines, forecasting models, and full-stack analytics platforms used daily by the trading desk.</p>
+                        <p>Applied AI engineer and quantitative analyst at DXT Commodities, building production systems for U.S. natural gas and power markets — retrieval-augmented LLM pipelines, forecasting models, and full-stack analytics platforms used daily by the trading desk.</p>
                         <div class="hero-buttons">
                             <a href="#contact" class="btn btn-primary">Get In Touch</a>
                             <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -92,7 +92,7 @@
 
                         <p>Core expertise:</p>
                         <ul>
-                            <li>AI Engineering: LLM pipelines, LangChain / LangGraph, RAG, LLM agents, structured extraction, prompt engineering</li>
+                            <li>AI Engineering: RAG (HyDE, CRAG, Self-RAG, Graph RAG, Agentic RAG), LLM agents, structured extraction, LangChain / LangGraph, prompt engineering, LLM pipelines</li>
                             <li>Machine Learning: Scikit-learn, XGBoost, Ridge / OLS, time-series forecasting, walk-forward cross-validation</li>
                             <li>Full-Stack: Next.js, React, TypeScript, FastAPI, SQL Server, Docker, AWS</li>
                             <li>Energy Markets: Natural gas &amp; power fundamentals, LNG feed-gas, pipeline capacity, ISOs / RTOs (PJM, ERCOT, NYISO, MISO, ISO-NE), FTR markets</li>
@@ -118,7 +118,7 @@
                         <h3 class="role-title">Applied AI Engineer &amp; Quantitative Analyst — Market Fundamentals (LNG &amp; Power)</h3>
                         <ul>
                             <li><strong>Pipeline transparency platform.</strong> Built the scraping and LLM extraction pipeline that reads maintenance and capacity notices across ~20 U.S. interstate gas pipelines and multiple operator portal architectures. Structured extraction with the Claude API turns free-form notices into typed capacity-impact records. FastAPI + SQL Server.</li>
-                            <li><strong>PJM Fleet Analytics Platform.</strong> Full-stack platform covering the PJM generation fleet at national scale. Overview, thermal, non-thermal, plants, insights, and natural-language query views used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.</li>
+                            <li><strong>PJM Fleet Analytics Platform.</strong> Full-stack platform covering the PJM generation fleet at national scale. Overview, thermal, non-thermal, plants, insights, and a <strong>retrieval-augmented natural-language query view</strong> (SQL context → LLM answer) used daily by the power desk. Next.js + React + TypeScript, FastAPI, SQL Server, Docker.</li>
                             <li><strong>Multi-ISO Power Price Analytics Platform.</strong> Live platform covering PJM, ERCOT, NYISO, MISO, and ISO-NE. Historical LMPs by energy/congestion/loss component, forward-contract settlements with strip aggregation, and a Price ⇄ Heat-Rate toggle that connects power and gas.</li>
                             <li><strong>U.S. LNG feed-gas forecasting.</strong> End-to-end forecasting pipeline covering the U.S. LNG export terminal fleet. Three-model validation framework; sub-3% MAPE on out-of-sample validation.</li>
                             <li><strong>U.S. natural gas demand forecasts.</strong> Multi-model forecaster (12 regions × 4 end-use sectors) producing daily 30-day forecasts for the Lower 48. XGBoost for weather-sensitive sectors, Ridge for the slower ones. Driven by NWS temperature forecasts and Fed industrial production data, trained on EIA state-level consumption; walk-forward cross-validation.</li>
