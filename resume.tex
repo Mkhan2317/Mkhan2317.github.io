@@ -134,11 +134,6 @@ Applied AI engineer building production \textbf{LLM systems} --- structured extr
 \small
 
 \entryrow{\textbf{HR Policy RAG Copilot} \; \textperiodcentered\; \href{https://github.com/Mkhan2317/hr-policy-rag-copilot}{github.com/Mkhan2317/hr-policy-rag-copilot}}{\normalfont\itshape Personal project --- September 2026}
-\begin{itemize}
-  \item \textbf{Agentic, self-correcting RAG} for enterprise HR questions. \textbf{LangGraph}-orchestrated router decides per query between a private Pinecone knowledge base, live Tavily web search, or direct reply; an LLM-as-judge grades retrieved chunks and triggers query rewriting when evidence is weak.
-  \item \textbf{Multi-source retrieval + evidence grading.} Pinecone vector store (OpenAI \texttt{text-embedding-3-small}) for private HR policies; Tavily fallback for public regulation lookups (FMLA, minimum wage). Every answer returns cited sources and a collapsible agent trace showing every node fired.
-  \item \textbf{Full-stack, deployed.} FastAPI + LangGraph + LangChain (\texttt{gpt-4o-mini}) backend with SQLite audit log and LangSmith tracing; Next.js 16 / React 19 / TypeScript / Tailwind 4 frontend; unified multi-stage Docker image on DigitalOcean App Platform. Admin-gated ingestion for PDF / DOCX / TXT / MD.
-\end{itemize}
 
 % ---------- TECHNICAL SKILLS ----------
 \section*{Technical Skills}
